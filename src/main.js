@@ -4,7 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import elementUI from 'element-ui';
-
+//
 import store from './appStore';
 
 Vue.config.productionTip = false;
@@ -21,5 +21,4 @@ new Vue({
     template: '<App/>'
 });
 
-let ss = store.commit('initConnection');
-console.log(ss);
+store.commit('initConnection');
